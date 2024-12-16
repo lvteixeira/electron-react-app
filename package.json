@@ -4,13 +4,16 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "start:dev": "npx electronmon --trace-warnings .",
+    "start": "nf start -p 3000",
+    "electron:dev": "npx electronmon --trace-warnings .",
+    "electron-start": "node ./electron-wait-react",
+    "react-start": "cd ./app/ && npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "electron": "^33.2.1"
+    "electron": "^33.2.1",
+    "foreman": "^3.0.1"
   }
 }
