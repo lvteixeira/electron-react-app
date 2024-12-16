@@ -16,7 +16,7 @@ const createMainWindow = () => {
     protocol: 'file',
   });
 
-  mainWindow.loadURL(startUrl);
+  mainWindow.loadURL('http://localhost:3000');
 }
 
 app.whenReady().then(createMainWindow);
